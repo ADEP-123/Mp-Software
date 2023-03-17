@@ -24,6 +24,8 @@
             <a href="#ModeloV" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo en V</a>
             <a href="#ModeloEvo" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo Evolutivo</a>
             <a href="#ModeloEsp" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo En Espiral</a>
+            <a href="#ModeloBComp" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo Basado por componentes</a>
+            <a href="#ModeloEIncr" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo Por Entregas Incrementales</a>
             <p><i>Esta aplicacion fue desarrollada por </i><b>Andrés david Elizalde Peralta</b>
             <br><i>Estudiante de la Universidad de Santander (UDES)</i></p>
             <hr>
@@ -594,7 +596,7 @@
         </div><!--Footer-->
     </div><!--FIN Modelo Evo-->
 
-    <div data-role="page" id="ModeloEsp" data-theme="a"><!--INICIO Modelo DRA-->
+    <div data-role="page" id="ModeloEsp" data-theme="a"><!--INICIO Modelo en Esprial-->
 
         <div data-role="header" data-theme="a"><!--INICIO HEADER-->
             <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
@@ -677,16 +679,16 @@
                 <p>
                     <ul>
                         <li>
-                            Es un modelo útil cuando el cliente conoce los objetivos generales, pero no puede definir los detalles finos del sistema.
+                            Podemos predecir los mantenimientos.
                         </li>
                         <li>
-                            Favorece la adaptabilidad de un sistema en cuanto a usabilidad e interacción persona-computadora.
+                           Disminución de riesgos(mirar todo lo que pueda salir mal, el peor de los casos siempre).
                         </li>
                         <li>
-                            Comprar puede ahorrar dinero en comparación con construir, los entregables pueden ser fácilmente trasladados a otra plataforma, el desarrollo se realiza a un nivel de abstracción mayor, visibilidad temprana.
+                            Permite un alto control de las actividades que seran dearrolladas a la vuelta de cada ciclo del espiral.
                         </li>
                         <li>
-                            Ingeniería de Software, mayor flexibilidad, menor codificación manual, mayor involucramiento de los usuarios.
+                            Administración y control de riesgos en medio del proceso de desarrollo. Es explicitamente definido para cada etapa.
                         </li>
                     </ul>
                 </p>
@@ -697,13 +699,13 @@
                 <p>
                     <ul>
                         <li>
-                            El usuario puede generarse sobre expectativas en base a prototipos que tienen poca funcionalidad pero mucha "estética".
+                            xxx.
                         </li>
                         <li>
-                            El desarrollador podría tomar decisiones erróneas en cuanto al diseño, por implementar versiones parciales, que serían difíciles de modificar a futuro.
+                            xxx.
                         </li>
                         <li>
-                            Comprar puede ser más caro que construir, costo de herramientas integradas y equipo necesario, progreso más difícil de medir, menos eficiente, menor precisión científica, riesgo de revertirse a las prácticas sin control de antaño.
+                            xxx.
                         </li>
                     </ul>
                 </p>
@@ -714,13 +716,13 @@
                 <p>
                     <ul>
                         <li>
-                            No todos los tipos de aplicaciones son apropiados para DRA. Si un sistema no se puede modulizar adecuadamente. La construcción de los componentes necesarios para DRA será problemático. Si está en juego el alto rendimiento, y se va a conseguir el rendimiento convirtiendo interfaces en componentes de sistema, el enfoque DRA puede que no funcione.
+                            xxx.
                         </li>
                         <li>
-                            Para proyectos grandes aunque por escalas, el DRA requiere recursos humanos suficientes como para crear el número correcto de equipos DRA
+                            xxx
                         </li>
                         <li>
-                            Si no hay compromiso, por ninguna de las partes constituyentes, los proyectos DRA fracasaran.</li>
+                            xxx.</li>
                     </ul>
                 </p>
             </div>
@@ -731,7 +733,207 @@
             <h1>Universidad de Santander (UDES)</h1>
         </div><!--Footer-->
 
-    </div><!--FIN Modelo DRA-->
+    </div><!--FIN Modelo en Esprial-->
+
+    <div data-role="page" id="ModeloBComp" data-theme="a"><!--INICIO Modelo en basado por componentes-->
+
+        <div data-role="header" data-theme="a"><!--INICIO HEADER-->
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo Basado por Componentes</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a"><!--INIFCIO CONTENIDO-->
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                   Es una práctica habitual por parte de los desarrolladores la inculsión de codigos desarrollados previamente por el equipor de desarrollo.
+                   <br><br>
+                   Esta práctica omfprmal no depende del proceso software que se esté siguiendo en el desarrollo de un sistema de esta manera dicha práctica haya una definicion dormal en el proceso software basada por componentes
+                   <br><br>
+                   Es un modelo muy usado de manera parcial por el almacen de componentes
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa?</h3>
+                <p>
+                    El modelo de desarrollo por prototipos se representa de la siguiente manera:
+                    <br>
+                    <img src="https://sites.google.com/site/jmartinez1974/DRA1.jpg" width="800px" align="center" style="margin: 5px;">
+                    <br>
+                    <b>Especificacion de requerimientos:</b> se habla de la viabilidad del proyecto
+                    <br><br>
+                    <b>Análisis de componentes:</b> Con base en los requerimientos del cliente se analizan los componentes factibles de ser implementados para dicha necesidad
+                    <br><br>
+                    <b>Modificación de requerimientos:</b> Con base en los requerimientos del cliente y los componentes encontrados en la etapa anteror se hacen modificaciones a los componentes para hallar las versiones ajustadas a las necesidades del cliente
+                    <br><br>
+                    <b>Diseño del sistema con reutilización:</b> Se realiza un diseño con base en los componentes que se reutilizaran. Si ciertos componentes no están disponibles de acuerdo a lo requerido por el diseño se debe diseñar nuevo software, nuevos componentes.
+                    <br><br>
+                    <p>Desarrollo e Integracion:</p>Los componentes que no existen y fueron diseñados en la etapa anterior se deben desarrollar, y luego comenzar con el proceso de integración de los componentes tanto los existentes como los nuevos componentes.
+                    <br><br>
+                    <b>Validación del sistema:</b>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Se reducen los tiempos de desarrollo
+                        </li>
+                        <li>
+                           Las aplicaciones son modulares permitiendo el desarrollo independiente de componentes los cuales alientan el almacen de cmponentes para ser incluidos en otros proyectos.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Si la organizacionno tiene control sobre cada componente de almacen de componentes pierde sentido la orientacion hacia este modelo (se ve afectada por la parte emocional del desarrollador).
+                        </li>
+                        <br>
+                        <li>
+                            El cliente exige tiempos basado en el hecho que ya muchas cosas están desarrolladas y no siempre los componentes existentes cumplen con las necesidades de los clientes.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            xxx.
+                        </li>
+                        <li>
+                            xxx
+                        </li>
+                        <li>
+                            xxx.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--FIN Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN Modelo Basado por Componentes-->
+
+    <div data-role="page" id="ModeloEIncr" data-theme="a"><!--INICIO Modelo por entrgas incrementales-->
+
+        <div data-role="header" data-theme="a"><!--INICIO HEADER-->
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo Por Entregas Incrementales</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a"><!--INIFCIO CONTENIDO-->
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    Modelo en el cual el cliente define las prioridades.
+                   <br><br>
+                   Cada incremento se desarrolla siguiendo los pasos que propone el modelo en cascada o el ciclo de vida del software.
+                   <br><br>
+                   Cada incremento define o entrega un subconjunto de funcionalidad del software completo y son definidos, desarrollados y entregados con base en la prioridad del cliente
+                   <br><br>
+                   Una vez que los incrementos del sistema sie han identificado, los requerimientos para los servicios que se van a entregar en el primer incremento se definen en detalle, y este se desarrolla.
+                   <br><br>
+                   Durante el desarrollo, se puede llevar a cabo un análisis adicional de requerimientos para los requerimientos posteriores, pero no se aceptan cambios en los requerimientos para el incremento actual. (Debe haber algun limite de actualizacion al que no pueden llegar los requerimientos)
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa?</h3>
+                <p>
+                    El modelo por entregas incrementales se representa de la siguiente manera:
+                    <br>
+                    <img src="https://www.researchgate.net/publication/317087042/figure/fig14/AS:613856493699101@1523366201735/Figura-19-Modelo-de-processo-de-desenvolvimento-incremental.pngg" width="800px" align="center" style="margin: 5px;">
+                    <br>
+                    <b>Definir esbozo de requerimientos: </b> 
+                    <br><br>
+                    <b>Asignar requerimientos de los incrementos: </b> 
+                    <br><br>
+                    <b>Diseñar la arquiterctura del sistema: </b> 
+                    <br><br>
+                    <b>Desarrollar incrementos del sistema: </b> 
+                    <br><br>
+                    <p>Validar incrementos: </p>
+                    <br><br>
+                    <b>Integrar incrementos: </b>
+                    <br><br>
+                    <b>Validar sistema: </b>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Los clientes no tienen que esperar hasta que el sistema completo se entrege para sacar provecho de él. El primer incremento satisface los requerimientos más críticos de tal forma que puedan utilizar el software inmediatamente.
+                        </li>
+                        <li>
+                           Las aplicaciones son modulares permitiendo el desarrollo independiente de componentes los cuales alientan el almacen de cmponentes para ser incluidos en otros proyectos.
+                        </li>
+                        <li>
+                            Existe un bajo riesgo de un fallo totaldel proyecto. Aquneu se puedan encontrar problemas en algunos incrementos, lo normal es que el sistema se entregue de forma satisfactoria al cliente.
+                        </li>
+                        <li>
+                            Es inevitable que los servicios mas importantes del sistema sean a los que se hagan mas pruebas. Esto significa que es menos probable que los clientes encuentren fallos en las partes mas importantes del sistema.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Puede ser dificil adaptar las necesidades del cliente a incrementos de tamaño apropiado.
+                        </li>
+                        <br>
+                        <li>
+                            Pueden existir componentes comunes a todos los incrementos y debido a que los requerimientos no se definen en detalle hasta que se implemente el incremento puede ser dificil identificar los recursos comunes a todos los incrementos.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            xxx.
+                        </li>
+                        <li>
+                            xxx
+                        </li>
+                        <li>
+                            xxx.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--FIN Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN Modelo por Entrgas incrementales->
 
 
 </body>
