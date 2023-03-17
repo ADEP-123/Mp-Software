@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.0.css">
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.3.0.js"></script>
+    <title>Resumen Modelos de Proceso de Software</title>
+</head>
+
+<body>
+    <div data-role="page" id="inicio" data-theme="a"><!--INICIO PAGINA INICIO-->
+
+        <div data-role="header" id="header" data-theme="c"><!--INICIO HEADER-->
+            <h1>RESUMEN M.P SOFTWARE</h1>
+        </div><!--FIN HEADER-->
+
+        <div data-role="content"><!--INICIO CONTENT-->
+            <a href="#Lineal" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo Lineal secuencial</a>
+            <a href="#ModeloProto" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo de Prototipos</a>
+            <a href="#ModeloDRA" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo DRA</a>
+            <a href="#ModeloV" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo en V</a>
+            <a href="#ModeloEvo" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo Evolutivo</a>
+            <a href="#ModeloEsp" data-role="button" data-icon="arrow-r" data-iconpos="right">Modelo En Espiral</a>
+            <p><i>Esta aplicacion fue desarrollada por </i><b>Andrés david Elizalde Peralta</b>
+            <br><i>Estudiante de la Universidad de Santander (UDES)</i></p>
+            <hr>
+        </div><!--FIN Content-->
+
+        <div data-role="footer" id="footer" data-theme="c"> <!--INICIO FOOTER-->>
+            <h1>Universidad de Santander UDES</h1>
+        </div><!-- FIN Footer-->
+
+    </div><!--Page Inicio-->
+
+    <div data-role="page" id="ModeloV" data-theme="a"><!--INICIO Modelo EN V-->
+
+        <div data-role="header" data-theme="a">
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo en V</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a">
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    Es un proceso que representa la secuencia de pasos en el desarrollo del ciclode vida de un proyecto. Contribuye al cumplimiento inegral de las funcionalidades especificadas y diseño del software, en conformidad con lo requerido por el cliente
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa</h3>
+                <p>
+                    El modelo en V se representa con el siguiente diagrama
+                    <br>
+                    <img src="/Imagenes/modelo.png" width="1000px" align="center">
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    El Modelo V aporta opciones de evaluación del software en cada etapa de manera inversa. Es decir,en cada etapa, se crea la planificaión de las pruebas y los casos de pruebas para verificar y validar el producto según los requisitos de la etapa. Por ejemplo, en la etapa de recogida de requisitos, el equipo de evaluadores prepara las pruebas de caso correspondientes a los requisitos. Más tarde, cuando el producto se desarrolla y está preparado para ser evaluado, las pruebas de caso en esta etapa verifican el software y su validez sugún sus requisitos. <br>
+
+                    <br>Esto hace que tanto la verificación como la validación vayan en paralelo. Este modelo también se conoce como modelo de validación y verificación. <br>
+
+                    <br><b>Esto prooca los siguientes aspectos positivos:</b>
+                    <ol>
+                        <li>Minimizacion de los riesgos del proyecto:
+                            <br>Mejora la transparencia y el control del proyecto, especificando los enfoques estandarizados, describe los resultados correspondientes y las funciones de responsabilidad. Permite una detección temprana de las desviaciones y los riesgos, mejora la gestión de procesos, reduciendo así los riesgos del proyecto.
+                        </li>
+                        <li>Mejora y garantia de calidad:
+                            <br>Asegura que los resultados que se proporcionan sean completos y contengan la calidad deseada. Los resultados provisionales definidos se pueden comprobar en una fase temprana. La uniformidad en el contenido del producto mejora la legibilidad, comprensibilidad y verificabilidad.
+                        </li>
+                        <li>Reduccion de los gastos totales durante todo el proyecto
+                            <br>El esfuerzo para el desarrollo, producción, operación y mantenimiento de un sistema puede ser calculado, estimado y controlado de manera transparente mediante la aplicación de un modelo de procesos estandarizados. De esta forma, se reduce la dependencia con los proveedores, así como el esfuerzo para las siguientes actividades y proyectos
+                        </li>
+                    </ol>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>Al encontrarse errores luego de realizar las pruebas se pierde tiempo y dinero, ya que cada prueba se realiza luego de haber terminado la implementación.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    En el caso de este modelo son, obviamente, más las ventajas que encontramos, hace el proceso más dinámico, con la opción de realizar pruebas que nos ayudarán a corregir posibles errores durante su fase de desarrollo ademas de posee ventajas realmente notables que lo convierten en un modelo más completo y robusto que nos ayudaran a obtener un sistema de mejor calidad.
+                </p>
+            </div>
+
+        </div><!--Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN  MODELOV-->
+
+    <div data-role="page" id="Lineal" data-theme="a"><!--INICIO Modelo Lineal-->
+
+        <div data-role="header" data-theme="a">
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo Lineal Secuencial</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a">
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    Tambien llamado "CICLO DE VIDA BASICO", basandose en el modelo de cascada, sugiere básicamente un modelo secuencial para el desarrollo del software
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa</h3>
+                <p>
+                    El modelo comienza en un nivel de sistemas, progrsa a un análisis, diseño, codificacion, pruebas y finaliza con un proceso de mantenimiento
+                    <br>
+                    <img src="/Imagenes/ModeloLineal.png" width="1000px" align="center" style="margin-top: 5px; margin-bottom: 5px;">
+                    <br>
+                    <b>Ingeniería y Análisis del sistema:</b> El trabajo inicia estableciendo los requisitos de todos los elementos del sistema y luego asignando algún subconjunto de estos requisitos al software.
+                    <br><br>
+                    <b>Análisis de los reqisitos del software:</b> Se centra e intensifica especialmente en elsoftware.El ingeniero desoftware(Analistas) debe comprender el ámbito de la información del software, así como la función,el rendimiento y las interfaces requeridas
+                    <br><br>
+                    <b>Diseño:</b> Se enfoca en cuatro atributos distintos del programa: la estructura de los datos, la arquitectura del software, el detalle procedimental y la caracterización de la interfaz. Este proceso traduce los requisitos en una representación del software con la calidad requerida antes de que comience la codificación.
+                    <br><br>
+                    <b>Codificacion:</b> El diseño debe traducirse en una forma legible para la maquina.
+                    <br><br>
+                    <b>Pruebas:</b> La prueba se centra en la lógica interna del software y en las funciones externas, realizando pruebas que aseguren que la entrada definida produce los resultados que realmente se requieren.
+                    <br><br>
+                    Existen variios tipos de pruebas:
+                    <ul>
+                        <li>Prueba de unidad</li>
+                        <li>Prueba de integración</li>
+                        <li>Prueba de sistema</li>
+                        <li>Prueba de aceptación</li>
+                    </ul>
+                    <br><br>
+                    <b>Manteinimiento:</b> La prueba se centra en la lógica interna del software y en las funciones externas, realizando pruebas que aseguren que la entrada definida produce los resultados que realmente se requieren.
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>Se tiene todo bien organizado y no se mezclan las fases</li>
+                        <li>Modelo y planificación fácil y sencillo.</li>
+                        <li>Este método radica en su sencillez ya que sigue los pasos intuitivos necesarios a la hora de desarrollar el software.</li>
+                        <li>Es perfecto para proyectos que son rígidos, y además donde se especifican muy bien los requerimientos y se conoce muy bien la herramienta a utilizar</li>
+                        <li> Los usuarios lo pueden comprender fácilmente.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li> Los proyectos reales raramente siguen el flujo secuencial que propone el modelo, siempre hay iteraciones y se crean problemas en la aplicación del paradigma.</li>
+                        <li>Normalmente, es difícil para el cliente establecer explícitamente al principio todos los requisitos.</li>
+                        <li>El ciclo de vida clásico lo requiere y tiene dificultades en acomodar posibles incertidumbres que pueden existir al comienzo de muchos productos.</li>
+                        <li>El cliente debe tener paciencia</li>
+                        <li>Hasta llegar a las etapas finales del proyecto, no estará disponible una versión operativa del programa. </li>
+                        <li>Un error importante no detectado hasta que el programa este funcionando puede ser desastroso.</li>
+                        <li>Alto riesgo en sistemas nuevos debido a problemas en las especificaciones y en el diseño.</li>
+                        <li>Los responsables del desarrollo de software siempre se retrasan innecesariamente. </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    El modelo lineal es caracterizado por ordenar de manera rigurosa las etapas del ciclo de vida de software, dado que el comienzo de cada etapa debe esperar a la finalización de la inmediata anterior.
+                    Sin embargo es esta misma caracteristica la que le juega en contra ya que provoca que el cliente no pueda ver ningun avance del proyecto y deba esperar, esto es malo ya que el cliente <b>NUNCA</b> es paciente
+                </p>
+            </div>
+
+        </div><!--Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN MODELO LINEAL-->
+
+    <div data-role="page" id="ModeloProto" data-theme="a"><!--INICIO Modelo de Prototipos-->
+
+        <div data-role="header" data-theme="a">
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo de Prototipos</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a">
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    Es un modelo que inicia con la definición de los objetivos globales para el software, luego se identifican los requisitos conocidos y las áreas del esquema en donde es necesaria más definición. Entonces se plantea con rapidez una iteración de construcción de prototipos y se presenta el modelado (enforma de un diseño rápido); Este modelo pertenece a los modelos de desarrolo evolutivo
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa</h3>
+                <p>
+                    El modelo de prototipos se desarrolla en las siguientes etapas:
+                    <br>
+                    <img src="/Imagenes/ModeloPrototipos.jpg" width="1000px" align="center" style="margin: 5px;">
+                    <br>
+                    <b>Comunicacion:</b> Es necesario tener una interacción con el cliente para evaluar la petición del software y determinar si el programa a desarrollar es un buen candidato para construir un prototipo
+                    <br><br>
+                    <b>Plan Rapido:</b> Representación abreviada de los requerimientos. Antes de que se pueda comenzar la construcción de un prototipo, en este se debe representar los dominios funcionales y de información del programa
+                    <br><br>
+                    <b>Modelado de Diseño Rapido:</b> Conjunto de especificaciones de diseño abreviadas para el prototipo. El diseño debe ocurrir antes de que comience la construcción del prototipo y se enfoca normalmente hacia la arquitectura a nivel superior y a los aspectos de diseño de datos
+                    <br><br>
+                    <b>Construccion del prototipo:</b> El software del prototipo se crea, prueba y se corrigen Idealmente todos los posibles errores, los bloques de construcción de software preexisten se utilizan para crear el prototipo de una forma rápida y se determina si un prototipo es funcional o no.
+                    <br><br>
+                    <u>Los tipos de prototipos son:</u>
+                    <br>
+                    <ul>
+                        <li>
+                            <b><i>Prototipo Evolutivo:</i></b>
+                            <br>
+                            Entrega a los usuarios finales un sistema funcionando. Se usa con los requerimientos que mejor se comprenden. Desarrollado a base de incrementos de acuerdo a la realimentación y los requerimientos detectados en sus versiones
+                        </li>
+                        <li>
+                            <b><i>Prototipo desechable:</i></b>
+                            <br>
+                            Valida o deriva los requerimientos del sistema. Se usa con los requerimientos que no se conocen bien. Período de vida corto.
+                        </li>
+                        <li>
+                            <b><i>Prototipo rápido:</i></b>
+                            <br>
+                            Comienza en las áreas de mayor riesgo. Si supera obstáculos, se puede desarrollar el resto del sistema a partir del prototipo, sino se puede descartar sin tener que gastar más dinero.
+                        </li>
+                    </ul>
+                    <br>
+                    <u>Las formas en las que se puede presentar un prototipo son:</u>
+                    <ol>
+                        <li>
+                            Un prototipo, en papel o ejecutable en ordenador, que describa la interacción hombre-máquina y los listados del sistema.
+                        </li>
+                        <li>
+                            Un prototipo que implemente algún(os) subconjunto(s) de la función requerida, y que sirva para evaluar el rendimiento de un algoritmo o las necesidades de capacidad de almacenamiento y velocidad de cálculo del sistema final
+                        </li>
+                        <li>
+                            Un programa que realice en todo o en parte la función deseada pero que tenga características rendimiento, consideración
+                        </li>
+                    </ol>
+                    <br><br>
+                    <b>Desarrollo y Entrega:</b> Una vez que el prototipo ha sido probado, se presenta al cliente, el cual "conduce la prueba" de la aplicación y sugiere modificaciones. Este paso es el núcleo del método de construcción de prototipo. Es aquí donde el cliente puede examinar una representación implementada de los requerimientos del programa, sugerir modificaciones que harán al programa cumplir mejor las necesidades reales
+
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Reducción de incertidumbre y del riesgo, reducción de tiempo y de costos
+                        </li>
+                        <li>
+                            Incrementos en la aceptación del nuevo sistema.
+                        </li>
+                        <li>
+                            Mejoras en la administración de proyectos.
+                        </li>
+                        <li>
+                            Mejoras en la comunicación entre desarrolladores y clientes.
+                        </li>
+                        <li>
+                            Este modelo es útil cuando el cliente conoce los objetivos generales para el software, pero no identifica los requisitos detallados de entrada, procesamiento o salida.
+                        </li>
+                        <li>
+                            Este modelo es útil cuando el cliente conoce los objetivos generales para el software, pero no identifica los requisitos detallados de entrada, procesamiento o salida.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Se suelen desatender aspectos importantes, tales como la calidad y el mantenimiento a largo plazo, lo que obliga en la mayor parte de los casos a reconstruirlo una vez que el prototipo ha cumplido su función.
+                        </li>
+                        <li>
+                            En aras de desarrollar rápidamente el prototipo, el desarrollador suele tomar algunas decisiones de implementación poco convenientes (por ejemplo, elegir un lenguaje de programación incorrecto porque proporcione un desarrollo más rápido).
+                        </li>
+                        <li>
+                            Con el paso del tiempo, el desarrollador puede olvidarse de la razón que le llevó a tomar tales decisiones, con lo que se corre el riesgo de que dichas elecciones pasen a formar parte del sistema final.
+                        </li>
+                        <li>
+                            La dependencia de las herramienta de software para el éxito ya que la necesidad de disminución de incertidumbre depende de las iteraciones del prototipo entre mas iteraciones existan mejor y esto ultimo se logra mediante el uso de mejores herramientas lo que hace a este proceso dependiente de las mismas
+                        </li>
+                        <li>
+                            A los usuarios les gusta el sistema real y a los desarrolladores les gusta construir algo de inmediato. Sin embargo, la construcción de prototipos se torna problemática por las siguientes razones:
+                            <ul>
+                                <li>
+                                    El cliente ve funcionando lo que para el es la primera versión del prototipo que ha sido construido con “chicle y cable para embalaje”, y puede decepcionarse al indicarle que el sistema aun no ha sido construido
+                                </li>
+                                <li>
+                                    El desarrollador puede caer en la tentación de aumentar el prototipo para construir el sistema final sin tener en cuenta las obligaciones de calidad y de mantenimiento que tiene con el cliente.
+                                </li>
+                                <li>
+                                    También no es posible aplicar la metodología a todos los proyectos de software y finalmente la mala interpretación que pueden hacer los usuarios del prototipo al cual pueden confundir con e sistema terminado.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            A pesar de que tal vez surjan problemas, la construcción de prototipos puede ser un paradigma efectivo para la ingeniería del software. La clave es definir las reglas del juego desde el principio, es decir que el cliente y el desarrollador se deben poner de acuerdo en:
+                            <ul>
+                                <li> Que el prototipo se construya y sirva como un mecanismo para la definición de requisitos.</li>
+                                <li>Que el prototipo se descarte, al menos en parte</li>
+                                <li>Que después se desarrolle el software real con un enfoquehacia la calidad.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Los cambios son de bajo costo por que los prototipos con constantemente refinados
+                        </li>
+                        <li>
+                            Reducción de tiempo y dinero
+                        </li>
+                        <li>
+                            Los requerimientos se desarrollan hasta que el cliente los acepta
+                        </li>
+                        <li>
+                            Si se presentan constantes cambios al prototipo se desecha y se construye un nuevo prototipo basado en un nuevo requerimiento
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN MODELO Prototipos-->
+
+    <div data-role="page" id="ModeloDRA" data-theme="a"><!--INICIO Modelo DRA-->
+
+        <div data-role="header" data-theme="a">
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo DRA</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a">
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    El modelo DRA (Desarrollo Rapido de Aplicaciones) se trata de un modelo de desarrollo de aplicaciones ágil.Además, la metodología RAD suele englobar también la usabilidad, utilidad y la rapidez de ejecución.
+                    <br><br>
+                    Es un modelo de proceso del desarrollo del software lineal secuencial que enfatiza un ciclo de desarrollo extremadamente corto, en el que se logra el desarrollo rápido utilizando un enfoque de construcción basado en componentes
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa?</h3>
+                <p>
+                    El modelo DRA se desarrolla en las siguientes fases:
+                    <br>
+                    <img src="/Imagenes/ModeloDRA.jpg" width="1000px" align="center" style="margin: 5px;">
+                    <br>
+                    <b>Modelado de gestión:</b> el flujo de información entre las funciones de gestión se modela de forma que responda a las siguientes preguntas:
+                    <ul>
+                        <li>
+                            ¿Qué información conduce el proceso de gestión?
+                        </li>
+                        <li>
+                            ¿Qué información se genera?
+                        </li>
+                        <li>
+                            ¿Quién la genera?
+                        </li>
+                        <li>
+                            ¿A dónde va la información?
+                        </li>
+                        <li>
+                            ¿Quién la proceso?
+                        </li>
+                    </ul>
+                    <br><br>
+                    <b>Modelado de datos:</b> el flujo de información definido como parte de la fase de modelado de gestión se refina como un conjunto de objetos de datos necesarios para apoyar la empresa.
+                    <br><br>
+                    <b>Modelado de proceso:</b> los objetos de datos definidos en la fase de modelado de datos quedan transformados para lograr el flujo de información necesario para implementar una función de gestión.
+                    <br><br>
+                    <b>Generación de aplicaciones:</b> El DRA asume la utilización de técnicas de cuarta generación. En lugar de crear software con lenguajes de programación de tercera generación, el proceso DRA trabaja para volver a utilizar componentes de programas ya existentes (cuando es posible) o a crear componentes reutilizables (cuando sea necesario). En todos los casos se utilizan herramientas automáticas para facilitar la construcción del software
+                    <br><br>
+                    <b>Pruebas de entrega:</b>  Como el proceso DRA enfatiza la reutilización, ya se han comprobado muchos de los componentes de los programas, esto reduce tiempo de pruebas.  Sin embargo, se deben probar todos los componentes nuevos y se deben ejercitar todas las interfaces a fondo.
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Es un modelo útil cuando el cliente conoce los objetivos generales, pero no puede definir los detalles finos del sistema.
+                        </li>
+                        <li>
+                            Favorece la adaptabilidad de un sistema en cuanto a usabilidad e interacción persona-computadora.
+                        </li>
+                        <li>
+                            Comprar puede ahorrar dinero en comparación con construir, los entregables pueden ser fácilmente trasladados a otra plataforma, el desarrollo se realiza a un nivel de abstracción mayor, visibilidad temprana.
+                        </li>
+                        <li>
+                            Ingeniería de Software, mayor flexibilidad, menor codificación manual, mayor involucramiento de los usuarios.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            El usuario puede generarse sobre expectativas en base a prototipos que tienen poca funcionalidad pero mucha "estética".
+                        </li>
+                        <li>
+                            El desarrollador podría tomar decisiones erróneas en cuanto al diseño, por implementar versiones parciales, que serían difíciles de modificar a futuro.
+                        </li>
+                        <li>
+                            Comprar puede ser más caro que construir, costo de herramientas integradas y equipo necesario, progreso más difícil de medir, menos eficiente, menor precisión científica, riesgo de revertirse a las prácticas sin control de antaño.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            No todos los tipos de aplicaciones son apropiados para DRA. Si un sistema no se puede modulizar adecuadamente. La construcción de los componentes necesarios para DRA será problemático. Si está en juego el alto rendimiento, y se va a conseguir el rendimiento convirtiendo interfaces en componentes de sistema, el enfoque DRA puede que no funcione.
+                        </li>
+                        <li>
+                            Para proyectos grandes aunque por escalas, el DRA requiere recursos humanos suficientes como para crear el número correcto de equipos DRA
+                        </li>
+                        <li>
+                            Si no hay compromiso, por ninguna de las partes constituyentes, los proyectos DRA fracasaran.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN Modelo DRA-->
+
+    <div data-role="page" id="ModeloEvo" data-theme="a"><!--INICIO Modelo Evolutivo-->
+
+        <div data-role="header" data-theme="a">
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo Evolutivo</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a">
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p align="justify">
+                    El desarrolo eolutivo consta dek desarrollo de una version inicialque luego de exponerse se va refinando de acuerdo de los comentarios o nuevos requerimientos parte del cliente o del usuario final <b>OJO: El usuario final no es necesariamente el cliente</b>
+                    <br><br>
+                    Ha varios tipos de modelos evolutivos y son los siguientes:
+                     <ul align="justify">
+                        <li><b>Modelo evolutivo incremental:</b> Está basado en varios ciclos Cascada realimentados aplicados repetidamente, con una filosofía iterativa. Es util cuando el personal necesario para una implementacion completa no esta disponible; es importante observar como interactuaria el cliente final con el software ya que los estados ideales no existen, el cliente final es siempre quien puede aclarar la forma en como se ralizan las formas dentro de la organizacion
+                        <br><br>
+                        Consta del desarrollo de una version inicial que luego de exponerse se va refinando de acuerdo de los comentarios o nuevos requerimientos por parte del cliente o usuario final</li>
+                        <ul align="justify"> Existen dos tipos de desarrollo evolutivo
+                            <li>
+                                <b>Desarrollo exploratorio:</b> fase critica de un desarrollo de software, parte de un desarrollo investigativo.
+                                <br>Ocurre donde el objetivo del proceso es trabajar con el cliente para explorar sus requerimientos y entregar un sistema final.
+                                <br>El desarrollo empiexa con las partes del sistema que comprenden mejor
+                                <br>El sistema evoluciona agregando nuevos atributos propuestos por el cliente
+                            </li>
+                            <li>
+                                <b>Prototipos desechables:</b> corresponde a segmentos que son repetitivos en el software como un logeo.
+                                <br>El bobjeito es comprender los requerimientos del cliente y entonces desarrollar una definicion mejorada de los requerimientos para el sistema
+                                <br>El prototipo se centra en experientar con los requerimientos del cliente que no se comprenden del todo
+                            </li>
+                        </ul>
+                     </ul>
+                     Desde el punto de vista de desarrollo de sistema el enfoque evolutivo suele traer mas ventajas en comparacion con un enfoque en cascada ya que el sistema se va ajustando a las necesidades del cliente, a la vez que el mismo entiende mejor sus propios requerimientos 
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa?</h3>
+                <p align="justify">
+                    El modelo desarrollo evolutivo:
+                    <br>
+                    <img src="http://ingsoftware.weebly.com/uploads/2/3/8/2/23822483/6836777_orig.jpg" width="800px" align="center" style="margin: 5px;">
+                    <br>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Se desarrolla en tiempos muy bajos, ya que omplementa la funcionalidad parcial
+                        </li>
+                        <li>
+                            Prporciona las mismas ventajas del modelo en cascada reduciendo las Desventajas, como esperar hasta que se acabe el modelo para realizar la retroalimentacion
+                        </li>
+                        <li>
+                            Diminuyen os riesgos ya que estos modelos se basan en la retoaliemntacion durante el avance
+                        </li>
+                        <li>
+                            Resulta mas sencillo acomodar cambios al acortar el tamaño de los incrementos
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>El enfoque eovlutivo desde una perspectiva de la ingenieria y gestión suele tener dos grandes problemas
+                    <ul>
+                        <li>
+                           <b> Proceso no visible:</b>
+                           El cliente no se va a sentar a mirar documentos.
+                           <br>Los administradores tienen qye hacer entregas regulares para medir el progreso
+                           <br>Si los sistemas se desarrollan rápidamente, no es rentable producir documentos que reflejen cade versión del sistema.
+                        </li>
+                        <li>
+                            <b>Tienen una estructura deficiente:</b>
+                            <br>Debe haber una constante comunicacion para no escribir el mismo codigo desde diferentes partes del sistema
+                        </li>
+                        <li>
+                            No es recomendable para sisteimas de tiempo real, de alto nivel de seguridad, de procesamiento distribuido, y/o de alto indice de riesgos
+                        </li>
+                        <li>
+                            Requiere mucha planificacion, tanto administraativa como técnica
+                        </li>
+                        <li>
+                            Requiere de metas claras para conocer el estado del proyecto
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            No todos los tipos de aplicaciones son apropiados para DRA. Si un sistema no se puede modulizar adecuadamente. La construcción de los componentes necesarios para DRA será problemático. Si está en juego el alto rendimiento, y se va a conseguir el rendimiento convirtiendo interfaces en componentes de sistema, el enfoque DRA puede que no funcione.
+                        </li>
+                        <li>
+                            Para proyectos grandes aunque por escalas, el DRA requiere recursos humanos suficientes como para crear el número correcto de equipos DRA
+                        </li>
+                        <li>
+                            Si no hay compromiso, por ninguna de las partes constituyentes, los proyectos DRA fracasaran.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+    </div><!--FIN Modelo Evo-->
+
+    <div data-role="page" id="ModeloEsp" data-theme="a"><!--INICIO Modelo DRA-->
+
+        <div data-role="header" data-theme="a"><!--INICIO HEADER-->
+            <a href="#inicio" data-role="button" data-icon="home" data-iconpos="left">Inicio</a>
+            <h1> Modelo En Espiral</h1>
+        </div><!--Header-->
+
+        <div data-role="content" data-theme="a"><!--INIFCIO CONTENIDO-->
+
+            <div data-role="collapsible">
+                <h3>¿Qué es?</h3>
+                <p>
+                    Puede ser considerado como una respuesta a los inconvenientes del desarrollo en cascada. El modelo en espiral describe el ciclo de vida de un software por medio de espirales, que se repiten hasta que se puede entregar el producto terminado. El desarrollo en espiral también se conoce como desarrollo o modelo incremental. El producto se trabaja continuamente y las mejoras a menudo tienen lugar en pasos muy pequeños.
+                    <br><br>
+                    Una característica clave del desarrollo en espiral es la minimización de los riesgos en el desarrollo de software, lo que podría resultar en un aumento de los costes totales, más esfuerzo y un lanzamiento retardado. Estos riesgos son contrarrestados por el enfoque incremental, haciendo primero prototipos, que luego pasan al menos una vez, por las fases de desarrollo de software. El desarrollo en espiral es genérico y puede combinarse con otros métodos de desarrollo clásicos y ágiles, por lo que también se denomina modelo o desarrollo de segundo orden.
+                    <br><br>
+                    El proceso pasa por distintas etapas, desde la de conceptualización, siguiendo el desarrollo, luego una fase de mejoras, para finalizar con el mantenimiento. 
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>¿Como se representa?</h3>
+                <p>
+                    El modelo de desarroolo en espiral se representa de la siguiente manera:
+                    <br>
+                    <img src="http://ingsoftware.weebly.com/uploads/2/3/8/2/23822483/3184429_orig.jpg" width="800px" align="center" style="margin: 5px;">
+                    <br>
+                    <b>Ciclo interno:</b> se habla de la viabilidad del proyecto
+                    <br><br>
+                    <b>Nivel 2:</b> Qué nos impide hacer el proyecto, pero mas importante buscarle solucion a esos posibles problemas
+                    <br><br>
+                    <b>Pruebas comparativas:</b> Se validan los requerimientos in-situ, se ajustan, se notan los requerimientos nuevos sin necesidad de esperar al cliente.
+                    <br><br>
+                    <b>Plan de desarrollo:</b> A pesar de tener un plan de desarrollo previo es necesario realizar un nuevo plan con los requerimientos y ajustes nuevos ya que el desarrollo de software es en bola de nieve( es uno de los mas largos).
+                    <br><br>
+                    <b>Fases de diseño:</b>  Producto refinado y V & V.
+                    <br><br>
+                    <b>Plan de pruebas:</b> Integracion de todas las partes trabajando en el proyecto, se realizan las pruebas en el sistema, se tiene un prototipo fuertemente desarrollado que se debe comparar con los requerimientos funcionales o con el alcance del proyecto que ya se tiene definido, es otro de los escenarios mas largos.
+                    <br><br>
+                    <b>Nuevo analisis de riesgos:</b> Con las caracteristicas que anteriormente se hallan desarrolladas
+                    <br><br>
+                    <b>Modelo operacional:</b> Modelo bien refinado y bonito, se pone al servicio de los testers en un servidor de pruebas en condiciones lo mas parecidas posiblemente a la realidad; se empieza a penssar en el servicio que se va a instalar a la organizacion en un ambiente real.
+                    <br><br>
+                    <b>Los grandes escenarios son:</b>
+                    <ul>
+                        <li>
+                            <b>Determinar objetivos y aternativas y restricciones:</b>
+                            <ul>
+                                <li>
+                                    Se definen los objetivos especificos (se debe tener creativdad).
+                                </li>
+                                <li>
+                                    Identificar las restricciones del proceso y el producto, y se trza un plan detallado de gestion(Gestion: todo lo que puede suceder,todos los pqueñeos escenarios que articulados de alguna manera me vana  permitir con un rquipo articulado llegar a la meta)
+                                </li>
+                                <li>
+                                    Se identifican los riesgos del proyecto(ejemplo pandemia global)
+                                </li>
+                                <li>
+                                    Dependiendo de los riesgos, se planean estrategias alternativas
+                                </li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <b>Evaluar alternativas de que podemos hacer cuando sucedan esos cambios que no tenemos contemplados, identificar y resolver los riesgos:</b>
+                            <ul>
+                                <li></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            Desarrollar y verificar todos los productos del sistema hasta el siguiente nivel
+                        </li>
+                        <li>
+                            Planificar la siguiente fase
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Ventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            Es un modelo útil cuando el cliente conoce los objetivos generales, pero no puede definir los detalles finos del sistema.
+                        </li>
+                        <li>
+                            Favorece la adaptabilidad de un sistema en cuanto a usabilidad e interacción persona-computadora.
+                        </li>
+                        <li>
+                            Comprar puede ahorrar dinero en comparación con construir, los entregables pueden ser fácilmente trasladados a otra plataforma, el desarrollo se realiza a un nivel de abstracción mayor, visibilidad temprana.
+                        </li>
+                        <li>
+                            Ingeniería de Software, mayor flexibilidad, menor codificación manual, mayor involucramiento de los usuarios.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Desventajas</h3>
+                <p>
+                    <ul>
+                        <li>
+                            El usuario puede generarse sobre expectativas en base a prototipos que tienen poca funcionalidad pero mucha "estética".
+                        </li>
+                        <li>
+                            El desarrollador podría tomar decisiones erróneas en cuanto al diseño, por implementar versiones parciales, que serían difíciles de modificar a futuro.
+                        </li>
+                        <li>
+                            Comprar puede ser más caro que construir, costo de herramientas integradas y equipo necesario, progreso más difícil de medir, menos eficiente, menor precisión científica, riesgo de revertirse a las prácticas sin control de antaño.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Conclusiones</h3>
+                <p>
+                    <ul>
+                        <li>
+                            No todos los tipos de aplicaciones son apropiados para DRA. Si un sistema no se puede modulizar adecuadamente. La construcción de los componentes necesarios para DRA será problemático. Si está en juego el alto rendimiento, y se va a conseguir el rendimiento convirtiendo interfaces en componentes de sistema, el enfoque DRA puede que no funcione.
+                        </li>
+                        <li>
+                            Para proyectos grandes aunque por escalas, el DRA requiere recursos humanos suficientes como para crear el número correcto de equipos DRA
+                        </li>
+                        <li>
+                            Si no hay compromiso, por ninguna de las partes constituyentes, los proyectos DRA fracasaran.</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div><!--FIN Content-->
+
+        <div data-role="footer" data-theme="a">
+            <h1>Universidad de Santander (UDES)</h1>
+        </div><!--Footer-->
+
+    </div><!--FIN Modelo DRA-->
+
+
+</body>
+</html>
